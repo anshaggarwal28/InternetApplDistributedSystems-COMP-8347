@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Category Details</title>
+</head>
+<body>
+    <h2>Category Details</h2>
+    <p><strong>Name:</strong> {{ category.name }}</p>
+    <p><strong>Category:</strong> {{ category.id }}</p>
+
+    <h3>Courses under this category:</h3>
+    <ul>
+        {% for course in courses_for_category %}
+            <li>{{ course.title }}</li>
+        {% endfor %}
+    </ul>
+
+    <p><a href="{% url 'myappF23:index' %}">Go back to main page</a></p> {# URL Name Spacing #}
+</body>
+</html>
+
+<!--
+5c. Do you need to pass any extra context variables to the template?
+YES
+5d. If yes, what variable(s) are you passing?
+The variables being passed are:
+category: An instance of the selected category based on the provided ID (category_no).
+courses_for_category: A list of courses that are associated with the selected category.
+-->

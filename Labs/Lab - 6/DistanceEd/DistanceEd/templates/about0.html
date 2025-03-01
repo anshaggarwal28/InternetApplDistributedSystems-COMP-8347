@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About - E-Learning WebApp</title>
+</head>
+<body>
+    <h2>About Distance Education</h2>
+    <p>This is a Distance Education Website! Search our Categories to find all available Courses.</p>
+
+    <p><a href="/myappF23/index0">Main Page (hardcoded URL)</a></p>
+    <p><a href="{% url 'myappF23:index0' %}">Main Page (Using URL Namespacing)</a></p>
+</body>
+</html>
+
+<!--
+4.c Do you need to pass any extra context variables to the template?
+4.d If yes, what variable(s) are you passing?
+None (since we're not passing any extra context variables to the template).
+
+Explanation:
+The about0.html template simply displays static content and provides links to the main page. It doesn't require any dynamic data from the database or any other source, so no context variables are needed.
+-->

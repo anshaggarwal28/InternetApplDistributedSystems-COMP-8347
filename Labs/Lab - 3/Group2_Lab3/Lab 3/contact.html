@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us - Data Science Club</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <h1>Get in Touch</h1>
+    
+    <p>If you have any questions, suggestions, or would like to connect with us, please don't hesitate to reach out. Fill out the contact form below, and we'll get back to you as soon as possible.</p>
+
+    <form action="submit_contact.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <div class="contact-container">
+        <h2>Contact Information:</h2>
+      
+        <div class="contact-info">
+          <div class="info-item">
+            <img src="location_icon.png" alt="Location Icon">
+            <p><strong>Address:</strong> 741 Rankinn Ave, Windsor</p>
+          </div>
+      
+          <div class="info-item">
+            <img src="phone_icon.png" alt="Phone Icon">
+            <p><strong>Phone:</strong> +1 (437) 557-6009</p>
+          </div>
+      
+          <div class="info-item">
+            <img src="email_icon.png" alt="Email Icon">
+            <p><strong>Email:</strong> lnu8@uwindsor.ca</p>
+          </div>
+        </div>
+      </div>
+      
+    
+<nav>
+    <ul class="nav-menu">
+      <li>
+        <a href="index.html" class="nav-link">Home</a>
+      </li>
+      <li>
+        <a href="about.html" class="nav-link">About Us</a>
+      </li>
+      <li>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</body>
+</html>
